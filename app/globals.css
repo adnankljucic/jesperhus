@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --jh-green: #1f7a3d;
+  --jh-green-dark: #14532d;
+  --jh-yellow: #ffc107;
+  --jh-orange: #f97316;
+  --jh-blue: #1d4ed8;
+  --jh-sand: #faf7f0;
+  --jh-ink: #1c1917;
+}
+
+html,
+body {
+  background-color: var(--jh-sand);
+  color: var(--jh-ink);
+}
+
+* {
+  scrollbar-color: var(--jh-green) transparent;
+}
+
+@keyframes jh-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.jh-skeleton-line {
+  animation: jh-pulse 1.4s ease-in-out infinite;
+}
